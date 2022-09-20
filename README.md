@@ -18,3 +18,5 @@ In this instance I hadnt setup WSL 2 as of yet - so it uses a standard Powershel
 
 aws cloudformation --region \<your_region\> create-stack --stack-name \<insert_yourstackname\> --template-body file:\<insert_your_file_location\> --parameters ParameterKey=HomeIp, ParameterValue=$(curl.exe -s http://checkip.amazonaws.com/)
 
+Kal Vachomer (needless to say) it references the HomeIP variable within the yaml file.
+
